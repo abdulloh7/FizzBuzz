@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>FizzBuzz</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <section>
+    <div class="container">
+      <h1 class="visually-hidden">FizzBuzz</h1>
+      <form class="js-form" action="https://echo.htmlacademy.ru">
+        <input class="js-form__input" type="number" name="number" required>
+        <button class="js-form__btn" type="submit">Click</button>
+        <div class="result"></div>
+      </form>
+    </div>
+  </section>
+
+
+  <script>
+    var elForm = document.querySelector('.js-form');
+    var elInput = document.querySelector('.js-form__input');
+    var elButton = document.querySelector('.js-form__button');
+    var elResult = document.querySelector('.result');
+
+    elForm.addEventListener('submit', function (evt) {
+      evt.preventDefault();
+
+      if (elInput.value == 0) {
+        elResult.textContent = 'Error'
+      }
+      else if (elInput.value % 3 === 0 && elInput.value % 5 === 0) {
+        elResult.textContent = 'FizzBuzz';
+      }
+      else if (elInput.value % 3 === 0) {
+        elResult.textContent = 'Fizz';
+      }
+      else if (elInput.value % 5 === 0) {
+        elResult.textContent = 'Buzz';
+      }
+      else {elResult.textContent = 'Error'}
+    });
+  </script>
+</body>
+</html>

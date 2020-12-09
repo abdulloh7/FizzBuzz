@@ -1,0 +1,58 @@
+body {
+  background-color: lightseagreen;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 540px;
+  padding-left: 20px;
+  padding-right: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+}
+
+.js-form {
+  background-color: #ffffff;
+  padding: 40px ;
+}
+
+.js-form__input {
+  border: 2px solid lightskyblue;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.js-form__btn {
+  border: 2px solid lightskyblue;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.js-form__btn:hover {
+  background-color: lightskyblue;
+  color: #ffffff;
+}
+
+.result {
+  width: 100px;
+  min-height: 20px;
+  border: 2px solid lightskyblue;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
